@@ -1,11 +1,18 @@
 package at.refugeescode.jacksparrow;
 
-import java.util.Random;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LegendaryCompass {
+    private Coin coin;
+
+    public LegendaryCompass(Coin coin){
+        this.coin = coin;
+
+    }
 
     public String tellMeWhereisTheCoin() {
-        Coin coin = new Coin();
+       // Coin coin = new Coin();
         if (coin.GetTheCoin().isPresent()){
             return "i found the Coin";
         }

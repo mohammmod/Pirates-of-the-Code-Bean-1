@@ -8,9 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LegendaryCompassTest {
     private LegendaryCompass legendaryCompass;
+    private Coin coin;
     @BeforeEach
     void makeThingsReady(){
-        legendaryCompass = new LegendaryCompass();
+        this.coin = new Coin();
+        legendaryCompass = new LegendaryCompass(coin);
     }
     @Test
     void tellMeWhereisTheCoin() {

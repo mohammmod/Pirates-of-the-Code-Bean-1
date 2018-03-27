@@ -2,9 +2,9 @@ package at.refugeescode.jacksparrow;
 
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
-@Component
+@Configuration
 public class JackSparrow {
     @Bean
     ApplicationRunner jackSparrowMain(JackSparrowHimself jackSparrowHimself){
